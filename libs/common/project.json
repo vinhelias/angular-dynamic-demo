@@ -1,0 +1,10 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/common/src",
+  "prefix": "chk-common",
+  "targets": {},
+  "tags": [
+    "chk",
+    "common"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@angular-devkit/build-angular:protractor",
+      "options": {
+        "protractorConfig": "apps/main-e2e/protractor.conf.js"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "main:serve:production"
+        },
+        "development": {
+          "devServerTarget": "main:serve:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    }
+  },
+  "implicitDependencies": [
+    "main"
+  ],
+  "tags": []
+}

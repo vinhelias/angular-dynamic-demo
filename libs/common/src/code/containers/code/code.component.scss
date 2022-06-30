@@ -1,0 +1,16 @@
+.wrapper-common-code {
+  @apply w-full border-2 border-solid rounded-md border-gray-700;
+  &__navigator {
+    @apply w-full border-b-2 border-solid border-gray-700 h-16 px-4;
+    @apply flex items-center gap-5;
+    &-item {
+      @apply text-gray-700 cursor-pointer font-mono;
+      &.active {
+        @apply text-red-300;
+      }
+    }
+  }
+  &__present {
+    @apply w-full p-4;
+  }
+}

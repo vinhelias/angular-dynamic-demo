@@ -1,0 +1,6 @@
+.overlay-cdk {
+  @apply bg-[rgba(9,30,66,0.54)] w-screen h-screen flex items-center justify-center fixed top-0 left-0 opacity-0 invisible z-[999];
+  &.show {
+    @apply opacity-100 visible;
+  }
+}

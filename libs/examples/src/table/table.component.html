@@ -1,0 +1,14 @@
+<chk-common-code [files]="files">
+  <h1>TABLE</h1>
+  <chk-common-table [rows]="rows" [columns]="columns">
+    <ng-template chkCommonTableBody key="name" let-item="row">
+      <span>{{item.name}}</span>
+    </ng-template>
+    <ng-template chkCommonTableBody key="age" let-item="row">
+      <span>{{item.age}}</span>
+    </ng-template>
+    <ng-template chkCommonTableBody key="project" let-item="row">
+      <span>{{item.project}}</span>
+    </ng-template>
+  </chk-common-table>
+</chk-common-code>

@@ -1,0 +1,10 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/overlay/src",
+  "prefix": "chk-overlay",
+  "targets": {},
+  "tags": [
+    "chk",
+    "overlay"
+  ]
+}

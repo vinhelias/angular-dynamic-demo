@@ -1,0 +1,22 @@
+<div class="wrapper-common-code">
+  <div class="wrapper-common-code__navigator">
+    <div class="wrapper-common-code__navigator-item" [class.active]="activeTab === 'Preview'" (click)="activeTab = 'Preview'">
+      Preview
+    </div>
+    <ng-container *ngFor="let file of files">
+      <div class="wrapper-common-code__navigator-item" [class.active]="activeTab === file.title"(click)="selectFile(file)">
+        {{file.title}}
+      </div>
+    </ng-container>
+  </div>
+  <div class="wrapper-common-code__present">
+    <ng-container *ngIf="activeTab === 'Preview'; else codeTemplate">
+      <ng-content></ng-content>
+    </ng-container>
+    <ng-template #codeTemplate>
+      <pre>
+        <code [highlight]="code" [languages]="languages" [lineNumbers]="true"></code>
+      </pre>
+    </ng-template>
+  </div>
+</div>

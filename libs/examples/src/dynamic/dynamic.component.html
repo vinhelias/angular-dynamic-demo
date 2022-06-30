@@ -1,0 +1,6 @@
+<chk-common-code [files]="files">
+  <h1>DYNAMIC</h1>
+  <ng-container *ngFor="let item of items">
+    <ng-container chkCommonDynamic containerId="example" [code]="item"></ng-container>
+  </ng-container>
+</chk-common-code>

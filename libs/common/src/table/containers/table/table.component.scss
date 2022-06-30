@@ -1,0 +1,6 @@
+.wrapper-common-table {
+  @apply w-full rounded-sm;
+  td, th {
+    @apply border border-solid border-gray-800 text-center;
+  }
+}

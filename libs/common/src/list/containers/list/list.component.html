@@ -1,0 +1,7 @@
+<div class="wrapper-common-list">
+  <ng-container *ngFor="let item of data">
+    <div class="wrapper-common-list__item">
+      <ng-container *ngTemplateOutlet="itemTemplate; context: {item: item}"></ng-container>
+    </div>
+  </ng-container>
+</div>

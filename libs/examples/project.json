@@ -1,0 +1,10 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/examples/src",
+  "prefix": "chk",
+  "targets": {},
+  "tags": [
+    "chk",
+    "examples"
+  ]
+}
